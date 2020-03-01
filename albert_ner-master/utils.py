@@ -271,8 +271,8 @@ def convert_single_example(char_line, tag_to_id, max_seq_length, tokenizer, labe
         for m in range(len(token)):
             if m == 0:
                 labels.append(label_1)
-            else:
-                labels.append("X")
+            #else:
+                #labels.append("X")
     # 序列截断
     if len(tokens) >= max_seq_length - 1:
         tokens = tokens[0:(max_seq_length - 2)]
